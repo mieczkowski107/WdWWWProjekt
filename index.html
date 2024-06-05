@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep Internetowy</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,7 +17,7 @@
                 <img src="images/logo.jpeg" alt="Logo"> 
             </div>
             <div class='search-bar'>
-                <input type="text" placeholder="Search...">
+                <input type="search" name="search" id="search" placeholder="Search...">
                 <!-- search bar -->
             </div>
             <div class="options">
@@ -35,7 +35,27 @@
     <main>
         <div class='mainContainer'>
             <h1>Contact Us</h1>
-           
+            <p>Feel free to contact us with any questions or concerns you may have. We are here to help you!</p>
+            <div class="main-grid-container">
+                <div class="contact-information">
+                    <h2>Contact Information</h2>
+                    <div class="contact-information-assets">
+                       
+                                       
+                    </div>
+                        
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="https://httpbin.org/post" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Name and Surname"> <br>
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" name="email" required placeholder="E-mail adress"> <br>
+                        <label for="message">Message:</label> <br>
+                        <textarea id="message" name="message" required rows="4" placeholder="Write something"></textarea> <br>
+                        <input type="submit" value="Submit">
+                    </form>
             </div>
         </div>
 
@@ -45,10 +65,10 @@
     <footer>
         <div class=footer-container>
             <div class=logo>
-                <img src="images/logo.jpeg" alt="LOGO">
+                <!-- <img src="images/logo.jpeg" alt="LOGO"> -->
             </div>
             <div class="footer-section">
-                Products
+               Products
             </div>
             <div class="footer-section">
                 About Us
