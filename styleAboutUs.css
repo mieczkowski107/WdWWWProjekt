@@ -1,13 +1,15 @@
-body {
+body 
+{
     width: 100%;
     height: 100vh;
     margin: 0;
     font-family: Tahoma;
     font-size: 16px;
 }
-
+/*-------------------------------------------------------*/
 /* Menu */
-.menu {
+.menu 
+{
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,7 +18,8 @@ body {
     z-index: 1;
 }
 
-ul {
+ul 
+{
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -24,11 +27,13 @@ ul {
     background-color: white;
 }
 
-li {
+li 
+{
     float: left;
 }
 
-li a {
+li a 
+{
     display: block;
     color: black;
     text-align: center;
@@ -38,15 +43,18 @@ li a {
     border-radius: 15px;
 }
 
-li:last-child a {
+li:last-child a 
+{
     border-right: none;
 }
 
-.menu li:hover a {
+.menu li:hover a 
+{
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px;
 }
 
-.menu li a:hover {
+.menu li a:hover 
+{
     box-shadow: none;
 }
 
@@ -54,29 +62,34 @@ li:last-child a {
     margin-left: 20px;
 }
 
-.logoImg {
+.logoImg 
+{
     padding: 0;
 }
 
-.logoImg img {
+.logoImg img
+{
     position: absolute;
     height: 60px;
     width: 40px;
     transition: 0.15s;
 }
 
-.logoImg:hover img {
+.logoImg:hover img 
+{
     height: 64px;
     width: 44px;
 }
 
 /* Search bar */
-.search-bar {
+.search-bar 
+{
     position: relative;
     margin: auto;
 }
 
-.search-bar input {
+.search-bar input 
+{
     background-color: white;
     color: black;
     height: 3em;
@@ -89,7 +102,8 @@ li:last-child a {
 }
 
 /* Sub menu shop */
-.subMenu {
+.subMenu 
+{
     position: absolute;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px;
@@ -99,18 +113,22 @@ li:last-child a {
     transition: transform 0.1s ease-in-out;
 }
 
-.subMenu a {
+.subMenu a 
+{
     display: block;
     text-decoration: none;
     color: #333;
 }
 
-.menuItem:hover .subMenu {
+.menuItem:hover .subMenu 
+{
     transform: scaleY(1);
 }
 
-/* Main content */
-main {
+/*-------------------------------------------------------*/
+/* Main */
+main 
+{
     margin: 6em 0 0;
     text-align: center;
     display: flex;
@@ -118,14 +136,16 @@ main {
     align-items: center;
 }
 
-h1 {
+h1
+{   
     text-align: center;
     margin: 1em 0 0;
     padding: 0;
     font-size: 3em;
 }
 
-.main-grid-container {
+.main-grid-container 
+{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -137,7 +157,8 @@ h1 {
     justify-items: center;
 }
 
-.AboutUs, .ImageAboutUs {
+.AboutUs, .ImageAboutUs 
+{
     display: grid;
     color: black;
     height: 80%;
@@ -147,33 +168,31 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.AboutUs {
+.AboutUs 
+{
     opacity: 0.9;
     padding: 2.5em;
     border-style: solid;
 }
 
-.AboutUs:hover {
+.AboutUs:hover 
+{
     transform: scale(1.05);
 }
 
-.AboutUs p {
+.AboutUs p 
+{
     margin: 0;
 }
 
-.AboutUs hr {
-    width: 60%;
-    margin: 3em auto 0;
-    border: none;
-    border-top: 1px solid #ccc;
-}
-
-.AboutUs h2 {
+.AboutUs h2 
+{
     margin: 0;
     font-size: 250%;
 }
 
-.ImageAboutUs {
+.ImageAboutUs
+{
     justify-content: center;
     align-items: center;
     overflow: hidden; 
@@ -181,8 +200,10 @@ h1 {
     margin-bottom: 5em;
 }
 
+/*-------------------------------------------------------*/
 /* Footer */
-footer {
+footer 
+{
     background-color: #fff;
     padding: 20px;
     text-align: center;
@@ -196,7 +217,8 @@ footer p
     color: #333;
     font-weight: bold;
 }
-footer a {
+footer a 
+{
     color: #333;
     text-decoration: none;
     margin: 0 10px;
@@ -210,7 +232,8 @@ footer i
     margin-bottom: 1em;
 }
 /* Additional styles */
-hr {
+hr 
+{
     width: 60%;
     margin: 3em auto 0;
     border: none;

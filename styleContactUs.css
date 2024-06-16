@@ -137,7 +137,7 @@ main {
     margin-top: 15em;
 }
 
-/* KONIEC SEGMENTU  -------------------------------------------------------- */
+/*-------------------------------------------------------*/
 h1
 {
     text-align: center;
@@ -148,7 +148,6 @@ h1
     font-size: 3em;
 }
 main {
-    /* background-image: url("images/Contact Us Vector Illustration Part 02.svg"); */
     background-position: center 10%;
     background-color: white;
     background-size: 100%;
@@ -203,7 +202,7 @@ h2 {
     opacity: 1.2;
     height: 100%;
     color: black;
-    width: 80%; /* Modify this line */
+    width: 80%;
     border-radius: 10px;
     margin: 0;
     border-style: solid ;
@@ -248,7 +247,6 @@ textarea
 }
 
 
-
 .FAQ-list h3 {
     margin: 1em;
     text-align: center;
@@ -265,7 +263,7 @@ textarea
     justify-items: center; 
 }
 
-/* KONIEC SEGMENTU  -------------------------------------------------------- */
+/*-------------------------------------------------------*/
 
 /* footer */
 
@@ -296,7 +294,7 @@ footer i
     margin: 0 10px;
     margin-bottom: 1em;
 }
-
+/*-------------------------------------------------------*/
 /* DODATKOWE */
 
 hr {

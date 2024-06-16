@@ -109,7 +109,8 @@ li:last-child a {
     transform: scaleY(1);
 }
 
-/* Main content */
+/*-------------------------------------------------------*/
+/* Main*/
 h1
 {
     text-align: center;
@@ -129,7 +130,7 @@ main {
     margin-top: 6em;
     justify-content: center;
     align-items: center;
-    display: flex; /* Add this line */
+    display: flex;
     height: auto;
 }
 
@@ -146,13 +147,11 @@ main {
 
 /* Delivery form*/
 
-
-
 .DeliveryForm {
     display: grid;
     height: 100%;
     color: black;
-    width: 100%; /* Increase the width to make it bigger */
+    width: 100%; 
     border-radius: 10px;
     margin: 0;
     border-style: solid ;
@@ -193,7 +192,7 @@ textarea
     border-color: black;
 }
 
-
+/*-------------------------------------------------------*/
 /* Footer */
 footer {
     background-color: #fff;
@@ -222,7 +221,8 @@ footer i
     margin: 0 10px;
     margin-bottom: 1em;
 }
-/* Additional styles */
+/*-------------------------------------------------------*/
+/* hr style */
 hr {
     width: 60%;
     margin: 3em auto 0;
