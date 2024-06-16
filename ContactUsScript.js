@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $("#btn").click(function(e) {
+$(document).ready(function () {
+    $("#btn").click(function (e) {
         e.preventDefault(); // Prevent form submission
 
         var formElement = document.getElementById("myform");
@@ -7,7 +7,7 @@ $(document).ready(function() {
             // Form is valid, proceed with serialization
             var jsonData = {};
             var formData = $("#myform").serializeArray();
-            $.each(formData, function() {
+            $.each(formData, function () {
                 if (jsonData[this.name]) {
                     if (!jsonData[this.name].push) {
                         jsonData[this.name] = [jsonData[this.name]];
@@ -20,14 +20,14 @@ $(document).ready(function() {
             // console.log(jsonData); // You can send this data to the server using AJAX
             $.ajax({
                 type: "POST", // Use POST method
-                url: "your_server_endpoint", // Replace with your server URL
+                url: "http://localhost:3000/message", // Replace with your server URL
                 data: JSON.stringify(jsonData), // Convert data to JSON format
                 contentType: "application/json", // Set content type to JSON
-                success: function(response) {
+                success: function (response) {
                     // Handle the server response (if needed)
                     console.log("Data sent successfully:", response);
                 },
-                error: function(xhr, status, error) {
+                error: function (xhr, status, error) {
                     // Handle errors (if any)
                     console.error("Error sending data:", error);
                 }
