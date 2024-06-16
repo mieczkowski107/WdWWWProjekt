@@ -6,10 +6,8 @@ body {
     font-size: 16px;
 }
 
-/* menu */
-
+/* Menu */
 .menu {
-    /* overflow: hidden; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,9 +20,8 @@ ul {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0 20px;
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 li {
@@ -41,25 +38,20 @@ li a {
     border-radius: 15px;
 }
 
-li :last-child {
+li:last-child a {
     border-right: none;
 }
 
-.menu li :hover {
+.menu li:hover a {
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px;
-    border-radius: 15px;
 }
 
-/* logo */
-
-li a :hover {
+.menu li a:hover {
     box-shadow: none;
-    border-radius: none;
 }
 
-.logo :hover {
-    box-shadow: none;
-    border-radius: none;
+.logo {
+    margin-left: 20px;
 }
 
 .logoImg {
@@ -70,31 +62,23 @@ li a :hover {
     position: absolute;
     height: 60px;
     width: 40px;
-}
-
-.logoImg:hover img{
-    height: 64px;
-    width: 44px;
     transition: 0.15s;
 }
 
-.logo {
-    margin-left: 20px;
+.logoImg:hover img {
+    height: 64px;
+    width: 44px;
 }
 
-/* search-bar */
-
+/* Search bar */
 .search-bar {
     position: relative;
-    /* padding-top: 0.9em; */
-    /* padding-left: 50%; */
     margin: auto;
 }
 
 .search-bar input {
     background-color: white;
     color: black;
-    align-items: center;
     height: 3em;
     text-align: center;
     width: 20em;
@@ -102,21 +86,14 @@ li a :hover {
     border: 1px solid rgb(204, 204, 204);
     outline: none;
     transition: 0.3s;
-
 }
 
-/* sub menu shop */
-
+/* Sub menu shop */
 .subMenu {
-    /* display: none; */
     position: absolute;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px;
     border-radius: 15px;
-
-    /* ta szerokość to zepsuta jest na poziomie designu ale coś można pomyśleć na sam sam koniec */
-    /* width: 80px; */
-
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.1s ease-in-out;
@@ -129,44 +106,29 @@ li a :hover {
 }
 
 .menuItem:hover .subMenu {
-    /* display: block; */
     transform: scaleY(1);
 }
 
+/* Main content */
 main {
-    margin-top: 15em;
-}
-
-/* KONIEC SEGMENTU  -------------------------------------------------------- */
-h1
-{
+    margin: 6em 0 0;
     text-align: center;
-    margin-top: 1em;
-    padding: 0;
-    border: 0;
-    margin-bottom: 0;
-    font-size: 3em;
-}
-main {
-    /* background-image: url("images/Contact Us Vector Illustration Part 02.svg"); */
-    background-position: center 10%;
-    background-color: white;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 0;
-    margin-top: 6em;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex; /* Add this line */
-    height: auto;
 }
 
+h1 {
+    text-align: center;
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 3em;
+}
 
 .main-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 6fr);
-    grid-template-rows: repeat(2,6fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 0.5em;
     margin: 3em auto;
     width: 80%;
@@ -175,58 +137,43 @@ main {
     justify-items: center;
 }
 
-i
-{
-    display: inline-block;
-}
-.AboutUs {
+.AboutUs, .ImageAboutUs {
     display: grid;
     color: black;
-    opacity: 0.9;
     height: 80%;
-    width: 80%; /* Modify this line */
-    border-radius: 10px;
+    width: 80%;
     margin: 0;
-    border-style: solid;
+    border-radius: 10px;
     transition: transform 0.3s ease;
-    padding: 2.5em;
 }
+
+.AboutUs {
+    opacity: 0.9;
+    padding: 2.5em;
+    border-style: solid;
+}
+
 .AboutUs:hover {
     transform: scale(1.05);
-    animation: fadeIN, 5s;
 }
 
-.AboutUs p
-{
+.AboutUs p {
     margin: 0;
-    padding: 0;
-    border: 0;
 }
-.AboutUs hr
-{
+
+.AboutUs hr {
     width: 60%;
-    margin: 0 auto;
+    margin: 3em auto 0;
     border: none;
     border-top: 1px solid #ccc;
-    margin-top: 3em;
 }
 
-.AboutUs h2
-{
+.AboutUs h2 {
     margin: 0;
-    padding: 0;
-    border: 0;
     font-size: 250%;
 }
 
 .ImageAboutUs {
-    display: grid;
-    opacity: 1.2;
-    height: 80%;
-    color: black;
-    width: 80%;
-    border-radius: 30px;
-    margin: 0;
     justify-content: center;
     align-items: center;
     overflow: hidden; 
@@ -234,41 +181,38 @@ i
     margin-bottom: 5em;
 }
 
-/* .ImageAboutUs img
-{
-    width: 110%;
-    height: 110%;
-    border-radius: 20px;
-    object-fit: cover;
-    
-}  */
-
-
-
-
-/* KONIEC SEGMENTU  -------------------------------------------------------- */
-
-/* footer */
-
+/* Footer */
 footer {
     background-color: #fff;
     padding: 20px;
     text-align: center;
 }
-
+footer p 
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    color: #333;
+    font-weight: bold;
+}
 footer a {
     color: #333;
     text-decoration: none;
     margin: 0 10px;
-    font-size: smaller;
+    font-size: medium;
 }
 
-/* DODATKOWE */
-
+footer i
+{
+    font-size: 1.5em;
+    margin: 0 10px;
+    margin-bottom: 1em;
+}
+/* Additional styles */
 hr {
     width: 60%;
-    margin: 0 auto;
+    margin: 3em auto 0;
     border: none;
     border-top: 1px solid #ccc;
-    margin-top: 3em;
 }
