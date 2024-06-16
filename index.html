@@ -3,89 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep Internetowy</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="grid-container">
-            <div class='logo'>
-                <img src="images/logo.jpeg" alt="Logo"> 
-            </div>
-            <div class='search-bar'>
-                <input type="search" name="search" id="search" placeholder="Search...">
-                <!-- search bar -->
-            </div>
-            <div class="options">
-                ABOUT US
-            </div>
-            <div class="options">
-
-                <a href="#">Products</a>
-
-            </div>
-            <div class="options">CONTACT</div>
-        </div>
-
+    <!-- menu -->
+    <header class="menu">
+        <ul>
+            <li class="logo"><a class="logoImg" href=""><img src="logo.png" alt="Logo"></a></li>
+            <li class="search-bar"><input type="text" placeholder="Search..."></li>
+            <li class="options"><a href="">About us</a></li>
+            <li class="menuItem">
+                <a href="">Shop</a>
+                <div class="subMenu">
+                    <a href="">Phones</a>
+                    <a href="">Laptops</a>
+                    <a href="">Accessories</a>
+                </div>
+            </li>
+            <li class="options"><a href="">Contact</a></li>
+        </ul>
     </header>
     <main>
-        <div class='mainContainer'>
-            <h1>Contact Us</h1>
-            <p>Feel free to contact us with any questions or concerns you may have. We are here to help you!</p>
-            <div class="main-grid-container">
-                <div class="contact-information">
-                    <h2>Contact Information</h2>
-                    <div class="contact-information-assets">
-                       
-                                       
-                    </div>
-                        
-                </div>
-                <div class="contact-form">
-                    <h2>Contact Form</h2>
-                    <form action="https://httpbin.org/post" method="post">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" required placeholder="Name and Surname"> <br>
-                        <label for="email">Email:</label> <br>
-                        <input type="email" id="email" name="email" required placeholder="E-mail adress"> <br>
-                        <label for="message">Message:</label> <br>
-                        <textarea id="message" name="message" required rows="4" placeholder="Write something"></textarea> <br>
-                        <input type="submit" value="Submit">
-                    </form>
+        <!-- karuzela -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="phone.jpg" style="width:100%">
+                <div class="text">Obraz pokazowy - model może różnić się w rzeczywistości</div>
             </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="laptop.jpg" style="width:100%">
+                <div class="text">Obraz pokazowy - model może różnić się w rzeczywistości</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="headphones.jpg" style="width:100%">
+                <div class="text">Obraz pokazowy - model może różnić się w rzeczywistości</div>
+            </div>
+            <!-- przyciski -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-    </main>
-    <hr />
-    <!-- Wstaw tu linie -->
-    <footer>
-        <div class=footer-container>
-            <div class=logo>
-                <!-- <img src="images/logo.jpeg" alt="LOGO"> -->
-            </div>
-            <div class="footer-section">
-               Products
-            </div>
-            <div class="footer-section">
-                About Us
-            </div>
-
-            <div class="footer-section">
-                <br>
-                Contact <br>
-                example@exmaple.com
-
-            </div>
-
+        <!-- kropki -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+        <!-- nie wiem czy to tu potrzebne, może script src powinien być w mainie, nie sprawdzałem -->
+        <script>autoSlide()</script>
+
         <hr>
-        <div id="copyright">
-            <h5>&copy;2024 ProjektWWW - All Rights Reserved.</h5>
+
+        <div class="endContainer">
+            <div class="buttonPictureContainer">
+                <img src="end.jpg" alt="Stary człowiek bawiący się w rytm muzyki">
+            </div>
+            <div class="shopButton">
+                <a href="">Shop with us!</a>
+            </div>
         </div>
+    </main>
+    <hr>
+    <footer>
+        <!-- do edycji wedle życzenia, nie myślałem za bardzo -->
+        <a href="#">Strona główna</a>
+        <a href="#">Produkty</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Polityka prywatności</a>
     </footer>
 </body>
 
