@@ -72,7 +72,7 @@ li a :hover {
     width: 40px;
 }
 
-.logoImg:hover img{
+.logoImg:hover img {
     height: 64px;
     width: 44px;
     transition: 0.15s;
@@ -137,35 +137,27 @@ main {
     margin-top: 15em;
 }
 
-/* KONIEC SEGMENTU  -------------------------------------------------------- */
-h1
-{
-    text-align: center;
-    margin-top: 1em;
-    padding: 0;
-    border: 0;
-    margin-bottom: 0;
-    font-size: 3em;
-}
+/*-------------------------------------------------------*/
+/* Main */
 main {
-    /* background-image: url("images/Contact Us Vector Illustration Part 02.svg"); */
-    background-position: center 10%;
-    background-color: white;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    margin: 6em 0 0;
     text-align: center;
-    margin: 0;
-    margin-top: 6em;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex; /* Add this line */
-    height: auto;
 }
 
+h1 {
+    text-align: center;
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 3em;
+}
 
 .main-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 6fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 0.5em;
     margin: 3em auto;
     width: 80%;
@@ -174,120 +166,78 @@ main {
     justify-items: center;
 }
 
-i
-{
-    display: inline-block;
-}
-.contact-information {
+.AboutUs,
+.ImageAboutUs {
     display: grid;
     color: black;
-    opacity: 0.9;
-    height: 100%;
-    width: 80%; /* Modify this line */
-    border-radius: 10px;
-    margin: 0;
-    border-style: solid;
-    
-}
-
-/* Contact form*/
-
-h2 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.contact-form {
-    display: grid;
-    opacity: 1.2;
-    height: 100%;
-    color: black;
-    width: 80%; /* Modify this line */
-    border-radius: 10px;
-    margin: 0;
-    border-style: solid ;
-
-}
-
-.contact-form input {
-    margin: 0.2em;
-    text-align: center;
-    align-items: center;
-    width: auto;
-    height: 3em;
-    border-radius: 10px;
-    width: 90%;
-    border-style: solid;
-    
-}
-
-textarea
-{
-    resize: none;
-    margin: 0.5em;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    border-radius: 10px;
-    width: 90%;
-    border-color: black;
-}
-
-/* FAQ DIV */
-
-.FAQ-list
-{
+    height: 80%;
     width: 80%;
-    margin: 3em auto;
-    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.AboutUs {
+    opacity: 0.9;
+    padding: 2.5em;
+    border-style: solid;
+}
+
+.AboutUs:hover {
+    transform: scale(1.05);
+}
+
+.AboutUs p {
+    margin: 0;
+}
+
+.AboutUs h2 {
+    margin: 0;
+    font-size: 250%;
+}
+
+.ImageAboutUs {
+    justify-content: center;
     align-items: center;
-    justify-items: center;
-    margin-bottom: 1em;
-
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5em;
 }
 
-
-
-.FAQ-list h3 {
-    margin: 1em;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.FAQ-list p 
-{
-    display: inline-block;
-    margin: 1em;
-    text-align: center; 
-    align-items: center; 
-    justify-items: center; 
-}
-
-/* KONIEC SEGMENTU  -------------------------------------------------------- */
-
-/* footer */
-
+/*-------------------------------------------------------*/
+/* Footer */
 footer {
     background-color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+footer p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    color: #333;
+    font-weight: bold;
+}
+
 footer a {
     color: #333;
     text-decoration: none;
     margin: 0 10px;
-    font-size: smaller;
+    font-size: medium;
 }
 
-/* DODATKOWE */
+footer i {
+    font-size: 1.5em;
+    margin: 0 10px;
+    margin-bottom: 1em;
+}
 
+/* Additional styles */
 hr {
     width: 60%;
-    margin: 0 auto;
+    margin: 3em auto 0;
     border: none;
     border-top: 1px solid #ccc;
-    margin-top: 3em;
 }
