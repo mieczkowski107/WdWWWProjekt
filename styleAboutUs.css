@@ -1,15 +1,15 @@
-body 
-{
+body {
     width: 100%;
     height: 100vh;
     margin: 0;
     font-family: Tahoma;
     font-size: 16px;
 }
-/*-------------------------------------------------------*/
-/* Menu */
-.menu 
-{
+
+/* menu */
+
+.menu {
+    /* overflow: hidden; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,22 +18,20 @@ body
     z-index: 1;
 }
 
-ul 
-{
+ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0 20px;
     background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-li 
-{
+li {
     float: left;
 }
 
-li a 
-{
+li a {
     display: block;
     color: black;
     text-align: center;
@@ -43,55 +41,60 @@ li a
     border-radius: 15px;
 }
 
-li:last-child a 
-{
+li :last-child {
     border-right: none;
 }
 
-.menu li:hover a 
-{
+.menu li :hover {
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px;
+    border-radius: 15px;
 }
 
-.menu li a:hover 
-{
+/* logo */
+
+li a :hover {
     box-shadow: none;
+    border-radius: none;
+}
+
+.logo :hover {
+    box-shadow: none;
+    border-radius: none;
+}
+
+.logoImg {
+    padding: 0;
+}
+
+.logoImg img {
+    position: absolute;
+    height: 60px;
+    width: 40px;
+}
+
+.logoImg:hover img{
+    height: 64px;
+    width: 44px;
+    transition: 0.15s;
 }
 
 .logo {
     margin-left: 20px;
 }
 
-.logoImg 
-{
-    padding: 0;
-}
+/* search-bar */
 
-.logoImg img
-{
-    position: absolute;
-    height: 60px;
-    width: 40px;
-    transition: 0.15s;
-}
-
-.logoImg:hover img 
-{
-    height: 64px;
-    width: 44px;
-}
-
-/* Search bar */
-.search-bar 
-{
+.search-bar {
     position: relative;
+    /* padding-top: 0.9em; */
+    /* padding-left: 50%; */
     margin: auto;
 }
 
-.search-bar input 
-{
+.search-bar input {
     background-color: white;
     color: black;
+    align-items: center;
     height: 3em;
     text-align: center;
     width: 20em;
@@ -99,30 +102,39 @@ li:last-child a
     border: 1px solid rgb(204, 204, 204);
     outline: none;
     transition: 0.3s;
+
 }
 
-/* Sub menu shop */
-.subMenu 
-{
+/* sub menu shop */
+
+.subMenu {
+    /* display: none; */
     position: absolute;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 1px;
     border-radius: 15px;
+
+    /* ta szerokość to zepsuta jest na poziomie designu ale coś można pomyśleć na sam sam koniec */
+    /* width: 80px; */
+
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.1s ease-in-out;
 }
 
-.subMenu a 
-{
+.subMenu a {
     display: block;
     text-decoration: none;
     color: #333;
 }
 
-.menuItem:hover .subMenu 
-{
+.menuItem:hover .subMenu {
+    /* display: block; */
     transform: scaleY(1);
+}
+
+main {
+    margin-top: 15em;
 }
 
 /*-------------------------------------------------------*/
