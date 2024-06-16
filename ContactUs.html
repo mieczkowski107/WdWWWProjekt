@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep Internetowy</title>
+    <link rel="stylesheet" href="styleContactUs.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <header class="menu">
+        <ul>
+            <li class="logo"><a class="logoImg" href=""><img src="logo.png" alt="Logo"></a></li>
+            <li class="search-bar"><input type="text" placeholder="Search..."></li>
+            <li class="options"><a href="">About us</a></li>
+            <li class="menuItem">
+                <a href="">Shop</a>
+                <div class="subMenu">
+                    <a href="">Phones</a>
+                    <a href="">Laptops</a>
+                    <a href="">Accessories</a>
+                </div>
+            </li>
+            <li class="options"><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class='mainContainer'>
+            <h1>Contact Us</h1>
+            <hr>
+            <div class="main-grid-container">
+                <div class="contact-information">
+                    <h2>Contact Information</h2>
+                    <div class="contact-information-assets">
+                        <h3>Address: </h3>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> 123 Main Street, New York, NY 10001</p>
+                        <h3>Phone:</h3>
+                        <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+                        <h3>Email:</h3>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:someone@example.com" style = "text-decoration: none; color: inherit;">example@example.com</a></p>
+            
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="https://httpbin.org/post" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Name and Surname"> <br>
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" name="email" required placeholder="E-mail adress"> <br>
+                        <label for="message">Message:</label> <br>
+                        <textarea type ="message" name="message" required rows="4" placeholder="Write something" ></textarea> <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="FAQ-list">
+                <ul>
+                    <li>
+                        <h3>How can I place an order?</h3>  
+                        <p>To place an order, simply browse our shop and add the desired items to your cart. Then proceed to the checkout page and follow the instructions to complete your purchase.</p>
+                    </li>
+                    <li>
+                        <h3>What payment methods do you accept?</h3>  
+                        <p>We accept various payment methods, including credit cards, PayPal, and bank transfers. You can choose your preferred payment option during the checkout process.</p>
+                    </li>
+                    <li>
+                        <h3>How long does shipping take?</h3> 
+                        <p>The shipping time depends on your location and the shipping method you choose. Generally, it takes between 3-7 business days for domestic shipping and 7-14 business days for international shipping.</p>
+                    </li>
+                    <li>
+                        <h3>Can I return or exchange a product?</h3> 
+                        <p>Yes, we have a hassle-free return and exchange policy. If you are not satisfied with your purchase, you can return or exchange the product within 30 days of receiving it. Please refer to our Returns & Exchanges page for more information.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <hr>
+    <footer>
+        <p><a href="#">Strona główna</a></p>
+        <p> <a href="#">Produkty</a></p>
+        <p><a href="#">Kontakt</a></p>
+        <p><a href="#">Polityka prywatności</a></p>
+        <br><br>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <br>
+        <p>&copy; 2024 Sklep Internetowy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+
+</html>
