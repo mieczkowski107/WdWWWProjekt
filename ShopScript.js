@@ -316,7 +316,6 @@ const data ={
       productList.appendChild(productDiv);
     });
   
-    // Add sorting buttons
     const sortButtons = document.createElement('div');
     sortButtons.className = 'sort-buttons';
   
