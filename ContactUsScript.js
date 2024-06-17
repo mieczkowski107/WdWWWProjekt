@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $("#btn").click(function (e) {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault();
 
         var formElement = document.getElementById("myform");
         if (formElement.checkValidity()) {
-            // Form is valid, proceed with serialization
+            //formatowanie
             var jsonData = {};
             var formData = $("#myform").serializeArray();
             $.each(formData, function () {
@@ -17,23 +17,20 @@ $(document).ready(function () {
                     jsonData[this.name] = this.value || '';
                 }
             });
-            // console.log(jsonData); // You can send this data to the server using AJAX
+            // wysyłanie danych do serwera
             $.ajax({
-                type: "POST", // Use POST method
-                url: "http://localhost:3000/message", // Replace with your server URL
-                data: JSON.stringify(jsonData), // Convert data to JSON format
-                contentType: "application/json", // Set content type to JSON
+                type: "POST",
+                url: "http://localhost:3000/message",
+                data: JSON.stringify(jsonData), // konwertowanie
+                contentType: "application/json",
                 success: function (response) {
-                    // Handle the server response (if needed)
                     console.log("Data sent successfully:", response);
                 },
                 error: function (xhr, status, error) {
-                    // Handle errors (if any)
                     console.error("Error sending data:", error);
                 }
             });
         } else {
-            // Form is invalid, display error messages
             formElement.reportValidity();
         }
     });

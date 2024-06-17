@@ -1,12 +1,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// kontrolki poprzedniego/następnego
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -35,5 +34,3 @@ function autoSlide() {
     plusSlides(1);
     setTimeout(autoSlide, 3000); // Co ile czasu ma się zmieniać obraz
 }
-
-autoSlide(); // To chyba tu nie musi zostawać, ale nie testowałem
